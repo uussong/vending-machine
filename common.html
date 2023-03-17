@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@500;700;900&display=swap"
+    rel="stylesheet">
+  <title>common</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style/common.css">
+</head>
+
+<body>
+  <button class="cola-btn">
+    <img src="./images/Original_Cola.svg" alt="오리지날 콜라">
+    <p class="cola-name">Original_Cola</p>
+    <strong class="cola-price">1000원</strong>
+  </button>
+  <button class="cola-btn sold-out" disabled>
+    <img src="./images/Original_Cola.svg" alt="오리지날 콜라">
+    <p class="cola-name">Original_Cola</p>
+    <strong class="cola-price">1000원</strong>
+  </button>
+
+  <div class="current-money">
+    <p>잔액:</p>
+    <strong>1,000원</strong>
+  </div>
+
+  <input class="input-money" type="number" placeholder="입금액 입력">
+
+  <button class="btn-common">입금</button>
+  <button class="btn-main">획득</button>
+
+  <div>
+    <ul class="cola-list">
+      <li class="cola-item">
+        <p class="cola-item-name">
+          <img class="cola-item-img" src="./images/Original_Cola.svg" alt="오리지날 콜라">
+          Original_Cola
+        </p>
+        <strong class="cola-item-count">1</strong>
+      </li>
+      <li class="cola-item">
+        <p class="cola-item-name">
+          <img class="cola-item-img" src="./images/Green_Cola.svg" alt="그린 콜라">
+          Green_Cola
+        </p>
+        <strong class="cola-item-count">2</strong>
+      </li>
+      <li class="cola-item">
+        <p class="cola-item-name">
+          <img class="cola-item-img" src="./images/Orange_Cola.svg" alt="오렌지 콜라">
+          Orange_Cola
+        </p>
+        <strong class="cola-item-count">1</strong>
+      </li>
+      <li class="cola-item">
+        <p class="cola-item-name">
+          <img class="cola-item-img" src="./images/Violet_Cola.svg" alt="바이올렛 콜라">
+          Violet_Cola
+        </p>
+        <strong class="cola-item-count">5</strong>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
