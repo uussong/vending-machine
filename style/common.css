@@ -137,6 +137,19 @@ input:focus {
   overflow-y: scroll;
 }
 
+.cola-list::-webkit-scrollbar {
+  width: 12px;
+  height: 100%;
+}
+
+.cola-list::-webkit-scrollbar-thumb {
+  height: 79px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 4px solid transparent;
+  border-radius: 50px;
+}
+
 .cola-item {
   display: flex;
   justify-content: space-between;
