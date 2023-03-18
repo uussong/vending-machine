@@ -1,6 +1,7 @@
 * {
   font-family: 'Gowun Dodum', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
 }
 
 /* reset */
+h2,
 p,
 input,
 ul,
@@ -92,14 +94,14 @@ input:focus {
 
 
 /* input */
-.input-money {
+.insert-money {
   width: 200px;
   border: 1px solid #BDBDBD;
   border-radius: 5px;
   padding: 7px 0 7px 6px;
 }
 
-.input-money::placeholder {
+.insert-money::placeholder {
   color: #BDBDBD;
   font-size: 13px;
   font-weight: 500;
@@ -128,7 +130,9 @@ input:focus {
 
 /* 콜라 리스트 */
 .cola-list {
+  background-color: #EAE8FE;
   border: 1px solid #BDBDBD;
+  border-radius: 5px;
   padding: 12px;
   overflow-y: scroll;
 }

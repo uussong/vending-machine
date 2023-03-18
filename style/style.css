@@ -1,3 +1,116 @@
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.logo {
+  aspect-ratio: 386 / 180;
+  width: 386px;
+}
+
 .wrapper {
   display: flex;
+  justify-content: center;
+  gap: 28px;
 }
+
+
+/* 자판기 */
+.cola-machine {
+  background-color: #fff;
+  padding: 30px 27px;
+}
+
+.cola-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.controller {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "money btn-return"
+    "insert btn-insert"
+    "list btn-get";
+  gap: 12px;
+}
+.cola-machine .current-money {
+  grid-area: money;
+}
+
+.btn-return {
+  grid-area: btn-return;
+}
+
+.insert-money {
+  grid-area: insert;
+}
+
+.btn-insert {
+  grid-area: btn-insert;
+}
+
+.cola-machine .cola-list {
+  grid-area: list;
+  height: 106px;
+  /* padding: 0 auto; */
+}
+
+.btn-get {
+  grid-area: btn-get;
+  max-height: 106px;
+}
+
+/* 내 정보 */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+
+.money-info {
+  background-color: #fff;
+  padding: 9px 27px;
+}
+
+.cola-info {
+  height: 100%;
+  background-color: #fff;
+  padding: 25px 27px;
+}
+
+.cola-list-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.cola-info .cola-list {
+  height: 364px;
+  margin: 13px 0 6px;
+}
+
+.total-money {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
