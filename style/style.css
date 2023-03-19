@@ -1,3 +1,7 @@
+body {
+  background-color: #EAE8FE;
+}
+
 .a11y-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -114,3 +118,36 @@ h1 {
   line-height: 17px;
 }
 
+/* 미디어 쿼리 */
+@media (max-width: 360px) {
+  body {
+    background-color: #fff;
+  }
+  
+  h1 {
+    margin-bottom: 18px;
+  }
+
+  .logo {
+    aspect-ratio: 166 / 78;
+    width: 166px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* 자판기 */
+  .cola-machine {
+    padding: 0 27px;
+  }
+
+  .money-info {
+    padding-bottom: 0;
+  }
+
+  .cola-info {
+    padding: 20px 27px 43px;
+  }
+}
