@@ -40,6 +40,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  justify-items: center;
   margin-bottom: 20px;
 }
 
@@ -58,6 +59,7 @@ h1 {
 
 .btn-return {
   grid-area: btn-return;
+  width: 100%;
 }
 
 .insert-money {
@@ -66,6 +68,7 @@ h1 {
 
 .btn-insert {
   grid-area: btn-insert;
+  width: 100%;
 }
 
 .cola-machine .cola-list {
@@ -76,6 +79,7 @@ h1 {
 .btn-get {
   grid-area: btn-get;
   max-height: 106px;
+  width: 100%;
 }
 
 /* 내 정보 */
@@ -118,7 +122,7 @@ h1 {
 }
 
 /* 미디어 쿼리 */
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   body {
     background-color: #fff;
   }
@@ -148,5 +152,9 @@ h1 {
 
   .cola-info {
     padding: 20px 27px 43px;
+  }
+
+  .cola-btn {
+    width: calc((100vw - 95px) / 3)
   }
 }
