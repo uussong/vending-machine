@@ -131,7 +131,7 @@ input:focus {
   border: 1px solid #BDBDBD;
   border-radius: 5px;
   padding: 12px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .cola-list::-webkit-scrollbar {
